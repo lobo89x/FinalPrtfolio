@@ -4,7 +4,10 @@ function useNavi() {
     const [isFlow, setFlow] = useState(false);
     
     const handleScroll = () => {
+        console.log("A::"+window.scrollY);
+        console.log("B::"+window.pageYOffset);
         (window.scrollY > 0) ? setFlow(true) : setFlow(false)
+        (window.pageYOffset === 0) ? setFlow(false) : setFlow(true)
     } 
 
     const debounce = (func, wait=20, immediate = true) => {
@@ -24,13 +27,13 @@ function useNavi() {
     }
 
     useEffect(() => {
-        window.addEventListener(scroll, debounce(handleScroll))
+        window.addEventListener("scroll", debounce(handleScroll))
         return () => {
-            window.removeEventListener(scroll, () => handleScroll)
+            window.removeEventListener("scroll", () => handleScroll)
         }
     }, [debounce, handleScroll])
 
-    return isFlow
+    return { isFlow }
 }
 
 export default useNavi;
