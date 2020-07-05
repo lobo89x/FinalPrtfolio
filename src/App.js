@@ -31,17 +31,17 @@ function App() {
         <div className="portfolio">
           <div  className="portfolio-box">
 
-          <a href="https://lobo89x.github.io/Word-Guess-Game/">
+          <a href="https://lobo89x.github.io/Word-Guess-Game/" onMouseOver={() => setOpacity(0.75)} onMouseOut={() => setOpacity(0)}>
             <div className="imgCaption" style={{opacity: opacity}}>
               <div className="title">
                 WordGuess: Tardis Edition
               </div>
               <div className="desc">
               A small hangman-esque game that illustrates use of JQuery, HTML, and CSS in concert.
-              <small className="text-muted">::git repo::<a href="https://github.com/lobo89x/Word-Guess-Game.git">here</a></small>
               </div>
+              <small className="text-muted">::git repo::<a href="https://github.com/lobo89x/Word-Guess-Game.git">here</a></small>
             </div>
-            <img src={require("../src/assets/imgs/tenor.gif")} alt="wordguess" width='auto' height='100%' onMouseOver={() => setOpacity(0.75)} onMouseOut={() => setOpacity(0)}/>
+            <img src={require("../src/assets/imgs/tenor.gif")} alt="wordguess" width='100%' height='100%'/>
           </a>
           </div>
           <a className="portfolio-box"></a>

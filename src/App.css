@@ -111,7 +111,7 @@
 }
 
 .imgCaption {
-  display: flex;
+  /* display: flex; */
   background-color: darkgrey;
   width: 100%;
   height: 100%;
@@ -121,6 +121,19 @@
   left: 0;
 }
 
+.desc {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: calc(12px + 2vmin);
+  color: white;
+}
+
+.title {
+  margin-top: 1%;
+  margin-bottom: 0.3%;
+  font-size: calc(25px + 2vmin);
+  color: white;
+}
 
 .contactMe {
   height: 500px;
