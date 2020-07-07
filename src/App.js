@@ -2,6 +2,7 @@ import React, { useState, setState } from 'react';
 import './App.css';
 import Navbar from './components/navbar.js';
 import useNavi from './hooks/useSticky';
+import Ticker from  './components/Ticker';
 // import { useForm } from 'react-hook-form';
 
 //class App extends Component {
@@ -14,30 +15,30 @@ function App() {
     const [opacity4, setOpacity4] = useState(0);
     // const {contactMe, handleSubmit, errors} = useForm();
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    // const [name, setName] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [message, setMessage] = useState("");
 
 
-    const handleSubmit = () => {
+    // const handleSubmit = () => {
       
-      const data = {
-        name,
-        email,
-        message
-      }
+    //   const data = {
+    //     name,
+    //     email,
+    //     message
+    //   }
 
-      console.log(data);
-      // fetch('http://localhost:3002/send',{
-      //   method: "POST",
-      //   body: JSON.stringify
-      // })
+    //   console.log(data);
+    //   // fetch('http://localhost:3002/send',{
+    //   //   method: "POST",
+    //   //   body: JSON.stringify
+    //   // })
 
-      // setName();
-      // setEmail();
-      // setMessage();
+    //   // setName();
+    //   // setEmail();
+    //   // setMessage();
 
-    }
+    // }
 
     // const mouseOn = () => {
     //   setOpacity(0.5);
@@ -51,10 +52,13 @@ function App() {
           <Navbar 
           pageNav={isFlow}/>
 
-        <div className="abtMe">
-          <a href='https://www.linkedin.com/in/alexander-lee-3abb1546/'>
-            <img src={require('../src/assets/imgs/Banner1.jpg')} alt="abtMe" width='100%' height='100%'/>
-          </a>
+        <div className="abtMeBox">
+          <div className="abtMe">
+            <a href='https://www.linkedin.com/in/alexander-lee-3abb1546/'>
+              <Ticker />
+              <img src={require('../src/assets/imgs/ProfileImage.png')} alt="abtMe" />
+            </a>
+          </div>
         </div>
         <p className="abtMe-text">
           Ever the free thinker, I have always enjoyed finding creative solutions to new problems. My time working with clients and training others in solutions development has taught me a unique set of skills that put me in a position to disseminate information to end users effectively while also being able to lend my talents to development and support staff and coordinate the interactions between the end user and the work being done behind the scenes. Now that I have completed my Fullstack Web Development Coding Certification from GaTech, I aim to bring this skillset to a new arena and further sharpen my front end and back end skills in MYSQL, HTML, CSS, Javascript, React and Angular just to name a few. I am continuing to hone my craft by sharpening my skill with code reviews, problems solving, web design and discovering newer languages and techniques. I hope to bring my skills and more to an organization and prove myself a great asset while building on my current abilities.
@@ -119,18 +123,18 @@ function App() {
         </div>
         <div className="contactMe">
           <img src="" alt="contactMe" href="" />
-          <form id="contact-form" onSubmit={handleSubmit()} method="POST">
+          <form id="contact-form" method="POST">
               <div className="form-group">
                   <label htmlFor="name">Name</label>
-                  <input name='name' type="text" className="form-control" onSubmit={setName(this.value)}/>
+                  <input name='name' type="text" className="form-control" />
               </div>
               <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Email address</label>
-                  <input name='email' type="email" className="form-control" aria-describedby="emailHelp" onSubmit={setEmail(this.value)}/>
+                  <input name='email' type="email" className="form-control" aria-describedby="emailHelp" />
               </div>
               <div className="form-group">
                   <label htmlFor="message">Message</label>
-                  <textarea name='message ' className="form-control" rows="5" onSubmit={setMessage(this.value)}></textarea>
+                  <textarea name='message ' className="form-control" rows="5" ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">Submit</button>
           </form>
