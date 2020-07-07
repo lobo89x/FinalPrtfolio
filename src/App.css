@@ -91,13 +91,15 @@
 
 .abtMe img {
   position: absolute;
-  height: 100%; 
-  left: 33%;
+  top: 0;
+  left: 43%; 
+  height: fill;
+  width: 20%;
   z-index: 2;
 }
 
 .abtMeBox {
-  
+  position: relative;
 }
 
 .abtMe-text {

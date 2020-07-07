@@ -52,8 +52,8 @@ function App() {
           <Navbar 
           pageNav={isFlow}/>
 
-        <div className="abtMeBox">
-          <div className="abtMe">
+        <div className="abtMe">
+          <div className="abtMeBox">
             <a href='https://www.linkedin.com/in/alexander-lee-3abb1546/'>
               <Ticker />
               <img src={require('../src/assets/imgs/ProfileImage.png')} alt="abtMe" />
