@@ -22,24 +22,46 @@
   display: flex;
   /* align-items: left; */
   justify-content: space-around;
-  padding: 3%;
-  position: fixed;
+  /* padding: 3%; */
+  position: absolute;
   z-index: 9999;
   width: 100%;
-  color: blanchedalmond;
   top: 0;
 }
 
+.nav-flow a {
+  color: whitesmoke;
+  font-size: calc(19px + 2vmin);
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 2.5%;
+  /* padding-right: 1%; */
+  /* border-right: 1px solid whitesmoke; */
+}
+
+.nav-top a {
+  color: whitesmoke;
+  font-size: calc(19px + 2vmin);
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 2.5%;
+  /* padding-right: 1%;
+  border-right: 1px solid black; */
+}
+
+
 .nav-top{
+    color: darkgreen;
     width: 100%;
-    height: 5%;
+    /* height: 5%; */
     background-color: silver;
     background-image: url("../src/assets/imgs/concrete-slab-wall.jpg");
 }
 
 .nav-flow{
+  color: whitesmoke;
   width: 100%;
-  height: 5%;
+  /* height: 5%; */
   background-color: darkgreen;
   position: fixed;
   top: 0;
@@ -57,8 +79,8 @@
 }
 
 .nav-Title {
-  font-size: calc(10px + 2vmin);
-  height: 100%;
+  font-size: calc(20px + 2vmin);
+  
 }
 
 .App-intro {
@@ -90,9 +112,11 @@
 }
 
 .abtMe img {
+  /* display: flex;
+  justify-content: center; */
   position: absolute;
   top: 0;
-  left: 43%; 
+  /* left: 43%;  */
   height: fill;
   width: 20%;
   z-index: 2;
@@ -100,6 +124,8 @@
 
 .abtMeBox {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .abtMe-text {
