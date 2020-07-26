@@ -12,8 +12,9 @@ export default class ContactMe extends React.Component {
 
     render() {
         return (
-            <form className="test-mailing">
-                <h1>This is a Test</h1>
+            <form className="test-mailing"
+            style={{backgroundColor: 'green'}}>
+                <h1 style={{color: 'white'}}>Contact Me!</h1>
                 <div>
                 <textarea 
                     id="test-mailing"
