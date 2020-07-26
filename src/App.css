@@ -111,21 +111,21 @@
   margin-bottom: 15px;
 }
 
-.abtMe img {
+.navbar img {
   /* display: flex;
   justify-content: center; */
   position: absolute;
   top: 0;
-  /* left: 43%;  */
-  height: fill;
-  width: 20%;
-  z-index: 2;
+  left: -50px; 
+  height: 500px;
+  width: auto;
+  z-index: -9;
 }
 
 .abtMeBox {
   position: relative;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: flex-end; */
 }
 
 .abtMe-text {
@@ -180,4 +180,23 @@
   background-color: green;
   margin-top: 7%;
   margin-bottom: 15px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  font-size: calc(15px + 2vmin);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.oval {
+  background-image: url('./assets/imgs/IMG_20191026_163324.cropped.jpg');
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  background-size: 500px;
+  margin: 20px;
 }

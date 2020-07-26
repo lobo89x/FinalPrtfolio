@@ -4,8 +4,8 @@ function useNavi() {
     const [isFlow, setFlow] = useState(false);
     
     const handleScroll = () => {
-        console.log("A::"+window.scrollY);
-        console.log("B::"+window.pageYOffset);
+        // console.log("A::"+window.scrollY);
+        // console.log("B::"+window.pageYOffset);
         (window.scrollY > 0) ? setFlow(true) : setFlow(false)
         (window.pageYOffset === 0) ? setFlow(false) : setFlow(true)
     } 

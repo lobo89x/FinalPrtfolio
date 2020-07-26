@@ -21,13 +21,13 @@ function Ticker() {
             <marquee 
             behavior='scroll' 
             direction='left' 
-            scrollamount='50'
+            scrollamount='30'
             style={{
                 fontSize:'calc(18px + 2vmin)',
                 color: 'white',
                 paddingTop: '2%'
             }}>
-              Full-Stack Web Dev with 7 yrs’ exp in IT &bull; Penchant for learning new technologies and skills &bull; Graduate of Georgia Institute of Technology Full Stack Development &bull; Well rounded &bull; Team player &bull; Positive energy &bull; Creative problem solver 
+              7 yrs’ exp in IT &bull; Penchant for learning new technologies and skills &bull; Graduate of Georgia Institute of Technology Full Stack Development &bull; Well rounded &bull; Team player &bull; Positive energy &bull; Creative problem solver 
             </marquee>
             <marquee 
             behavior='scroll' 

@@ -4,6 +4,8 @@ import Navbar from './components/navbar.js';
 import useNavi from './hooks/useSticky';
 import Ticker from  './components/Ticker';
 // import { useForm } from 'react-hook-form';
+import Abtm from './components/abtMeDesc';
+import ContactMe from './components/contactMe';
 
 //class App extends Component {
 function App() {  
@@ -56,13 +58,14 @@ function App() {
           <div className="abtMeBox">
             <a href='https://www.linkedin.com/in/alexander-lee-3abb1546/'>
               <Ticker />
-              <img src={require('../src/assets/imgs/ProfileImage.png')} alt="abtMe" />
+              {/* <img src={require('../src/assets/imgs/ProfileImage.png')} alt="abtMe" /> */}
             </a>
           </div>
         </div>
-        <p className="abtMe-text">
+        {/* <p className="abtMe-text">
           Ever the free thinker, I have always enjoyed finding creative solutions to new problems. My time working with clients and training others in solutions development has taught me a unique set of skills that put me in a position to disseminate information to end users effectively while also being able to lend my talents to development and support staff and coordinate the interactions between the end user and the work being done behind the scenes. Now that I have completed my Fullstack Web Development Coding Certification from GaTech, I aim to bring this skillset to a new arena and further sharpen my front end and back end skills in MYSQL, HTML, CSS, Javascript, React and Angular just to name a few. I am continuing to hone my craft by sharpening my skill with code reviews, problems solving, web design and discovering newer languages and techniques. I hope to bring my skills and more to an organization and prove myself a great asset while building on my current abilities.
-        </p>
+        </p> */}
+        <Abtm />
         <div className="portfolio">
           <div  className="portfolio-box">
             <a href="https://lobo89x.github.io/Word-Guess-Game/" onMouseOver={() => setOpacity(0.75)} onMouseOut={() => setOpacity(0)}>
@@ -121,7 +124,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="contactMe">
+        {/* <div className="contactMe">
           <img src="" alt="contactMe" href="" />
           <form id="contact-form" method="POST">
               <div className="form-group">
@@ -138,7 +141,8 @@ function App() {
               </div>
               <button type="submit" className="btn btn-primary">Submit</button>
           </form>
-        </div>
+        </div> */}
+        <ContactMe />
       </div>
     );
 //  }
